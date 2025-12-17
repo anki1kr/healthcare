@@ -1,0 +1,111 @@
+# ==============================================================================
+# Git Ignore Configuration: Healthcare Data Analyst Intern
+# Author: Ankit Kumar (Healthcare Data Analyst Intern)
+# ==============================================================================
+
+# --- Microsoft Word & Office Temporary / Lock Files ---
+~$*.docx
+~$*.doc
+~$*.xlsx
+~$*.pptx
+*.tmp
+*.bak
+
+# --- Python Bytecode & Cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- Virtual Environments ---
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# --- Testing & Quality Assurance ---
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+
+# --- Jupyter Notebook Checkpoints ---
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# --- IDEs & Editor Artifacts ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# --- Operating System Artifacts ---
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+
+# --- Large & Sensitive Data Files ---
+# Keep the validated benchmark CSV; ignore raw dumps and compressed archives.
+*.nc
+*.h5
+*.hdf
+*.tar.gz
+*.zip
+*.7z
+
+# --- Submission Payloads (internal tool artifact, not source) ---
+*_submissions_payload.json
+
+# --- Generated PDF Deliverables (regenerable from DOCX via COM) ---
+**/*.pdf
+
+# --- Generation & Helper Scripts (internal tooling, not deliverables) ---
+generate_week*.py
+healthcare_style_engine.py
+audit_document.py
+create_health_runners.py
+
+# --- Agent Workspaces & Instruction Docs ---
+AGENTS.md
+GEMINI.md
+CLAUDE.md
+*.agent.md
